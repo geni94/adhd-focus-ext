@@ -1,0 +1,18 @@
+{
+  "name": "adhd-strong",
+  "version": "1.0.0",
+  "description": "A browser extension to highlight the first three letters of every word for ADHD users",
+  "main": "contentScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "d0sta",
+  "license": "MIT",
+  "keywords": [
+    "browser-extension",
+    "adhd",
+    "highlight",
+    "letters",
+    "words"
+  ],
+}

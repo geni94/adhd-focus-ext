@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ADHD Helper",
+    "version": "1.0",
+    "description": "Highlights the first three letters of every word for ADHD users.",
+    "permissions": ["activeTab", "tabs", "scripting"],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "ADHD Helper"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["contentScript.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "48": "icon.png"
+    }
+}
+  
